@@ -46,13 +46,14 @@ const FlagGame = (props) => {
     
     return (
         <>
-            <h1>Bienvenido a Flag Game</h1>
-            <h2>A que país pertenece esta bandera?</h2>
+
+            <h1>FLAGS HANDLING</h1>
+            <div class="container texto"><h5>¿de que pais se trata?</h5></div>
             <form onSubmit={handleSubmit}>
-                <div><img src={Flag[AFlag].flag} alt={Flag[AFlag].nombre}/></div>
+                <div class= "container-lg"><img src={Flag[AFlag].flag} alt={Flag[AFlag].nombre}/></div>
                 <input type="text" name="pais" className="u-full-width" placeholder={Flag[AFlag].nombre} />
                 <button type="submit" className="u-full-width button-primary">Submit</button>
-                <h3>Tu puntaje es: {puntaje}</h3>
+                <h3>Tu puntaje es {puntaje}</h3>
             </form>
         </>
     )

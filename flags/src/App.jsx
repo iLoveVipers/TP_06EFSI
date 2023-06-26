@@ -1,5 +1,5 @@
 import './App.css';
-import FlagGame from './componentes/flagGame.jsx'
+import FlagGame from './components/flagGame.jsx'
 
 function App() {
   return (
